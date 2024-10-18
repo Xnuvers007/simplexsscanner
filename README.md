@@ -38,6 +38,8 @@ A lightweight and efficient tool designed to scan web applications for Cross-Sit
    You can install the required libraries using pip:
    ```bash
    pip install requests colorama
+   or
+   pip install -r requirements.txt
    ```
 
 ## Usage
@@ -45,7 +47,7 @@ A lightweight and efficient tool designed to scan web applications for Cross-Sit
 To use the XSS Scanner, run the script from the command line with the required arguments.
 
 ```bash
-python xss_scanner.py --url "http://example.com" --file "payload.txt" --user-agent "Mozilla/5.0" --threads 5
+python xss_scanner.py --url "http://example.com/?parameters=" --file "payload.txt" --user-agent "Mozilla/5.0" --threads 5
 ```
 
 ## Options
@@ -62,12 +64,12 @@ python xss_scanner.py --url "http://example.com" --file "payload.txt" --user-age
 
 Scan a target URL with default settings:
 ```bash
-python xss_scanner.py --url "http://example.com" --file "payload.txt"
+python xss_scanner.py --url "http://example.com/?parameters=" --file "payload.txt"
 ```
 
 Scan a target URL with a custom User-Agent and multiple threads:
 ```bash
-python xss_scanner.py --url "http://example.com" --file "payload.txt" --user-agent "Mozilla/5.0" --threads 10
+python xss_scanner.py --url "http://example.com/?parameters=" --file "payload.txt" --user-agent "Mozilla/5.0" --threads 10
 ```
 
 ## Contributing
