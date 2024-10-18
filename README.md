@@ -1,3 +1,6 @@
+# Image
+![image](https://github.com/user-attachments/assets/54ffe648-8aa7-4867-b6d0-a9f930fb147d)
+
 # Simple XSS Scanner
 
 A lightweight and efficient tool designed to scan web applications for Cross-Site Scripting (XSS) vulnerabilities. This scanner leverages customizable payloads and multithreading capabilities to streamline vulnerability detection.
