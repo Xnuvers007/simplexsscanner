@@ -33,7 +33,7 @@ def print_help():
     print("  -h, --help          Show this help message and exit.")
     print(f"\n{Fore.RED}Don't forget to input URL with http:// or https:// and parameters.{Style.RESET_ALL}")
     print("\nExample:")
-    print(f"  {Fore.GREEN}python xss_scanner.py --url \"https://example.com\?parameters=" --file \"payload.txt\" --user-agent \"Mozilla/5.0\" --threads 5 --output \"output.txt\"{Style.RESET_ALL}")
+    print(f"  {Fore.GREEN}python xss_scanner.py --url \"https://example.com/?parameters=\" --file \"payload.txt\" --user-agent \"Mozilla/5.0\" --threads 5 --output \"output.txt\"{Style.RESET_ALL}")
 
 parser = argparse.ArgumentParser(description="Simple XSS Scanner by Xnuvers007", epilog=f"{Fore.RED}Don't forget to input URL with http:// or https:// and parameters.")
 parser.add_argument("--url", "-u", required=True, help="Target URL to test for XSS vulnerabilities.")
